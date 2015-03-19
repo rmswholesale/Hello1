@@ -75,4 +75,13 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+  	<target name="build-war">
+  	   <war destfile="hello.war" webxml="WebContent/WEB-INF/web.xml">
+  	      <fileset dir="WebContent">
+  	         <include name="**/*.*"/>
+  	      </fileset>  	        	      
+  	      <classes dir="build/web"/>
+  	   </war>
+  	   
+  	</target>
 </project>
