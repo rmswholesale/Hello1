@@ -80,7 +80,7 @@
   	      <fileset dir="WebContent">
   	         <include name="**/*.*"/>
   	      </fileset>  	        	      
-  	      <classes dir="build/web"/>
+  	      <classes dir="build"/>
   	   </war>
   	   
   	</target>
